@@ -3,11 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>AI Tool Directory - Best AI Tools Collection 2026</title>
-    <meta name="description" content="Discover the best AI tools for content creation, image generation, video editing, coding and more. Daily updated directory with 500+ AI tools.">
-    <meta name="keywords" content="AI Tools, Artificial Intelligence, ChatGPT, Midjourney, AI Directory">
-    <meta name="author" content="AI Tool Directory">
-    <link rel="icon" type="image/png" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🤖</text></svg>">
+    <title>AIHub - Best AI Tools Directory 2026</title>
+    <meta name="description" content="Discover the best AI tools for content creation, image generation, video editing, coding and more.">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <style>
@@ -16,21 +13,18 @@
             padding: 0;
             box-sizing: border-box;
         }
-
         body {
             font-family: 'Inter', sans-serif;
             background: linear-gradient(135deg, #f5f7fa 0%, #e9ecef 100%);
             color: #1a1a2e;
             line-height: 1.6;
         }
-
         .container {
             max-width: 1280px;
             margin: 0 auto;
             padding: 0 20px;
         }
-
-        /* Navbar - Gradient Color */
+        /* Navbar */
         .navbar {
             background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);
             box-shadow: 0 4px 20px rgba(0,0,0,0.15);
@@ -38,14 +32,12 @@
             top: 0;
             z-index: 1000;
         }
-
         .navbar .container {
             display: flex;
             justify-content: space-between;
             align-items: center;
             padding: 1rem 20px;
         }
-
         .logo a {
             display: flex;
             align-items: center;
@@ -58,20 +50,17 @@
             -webkit-text-fill-color: transparent;
             cursor: pointer;
         }
-
         .logo i {
             font-size: 2rem;
             background: linear-gradient(135deg, #00d2ff, #3a7bd5);
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
         }
-
         .nav-links {
             display: flex;
             gap: 2rem;
             align-items: center;
         }
-
         .nav-links a {
             text-decoration: none;
             color: #e2e8f0;
@@ -79,17 +68,14 @@
             transition: all 0.3s;
             cursor: pointer;
         }
-
         .nav-links a:hover, .nav-links a.active {
             color: #00d2ff;
         }
-
         .auth-buttons {
             display: flex;
             gap: 12px;
             align-items: center;
         }
-
         .btn-auth {
             padding: 8px 20px;
             border-radius: 50px;
@@ -99,34 +85,28 @@
             border: none;
             font-size: 0.9rem;
         }
-
         .btn-login {
             background: transparent;
             color: #00d2ff;
             border: 2px solid #00d2ff;
         }
-
         .btn-login:hover {
             background: #00d2ff;
             color: #1a1a2e;
         }
-
         .btn-signup {
             background: linear-gradient(135deg, #00d2ff 0%, #3a7bd5 100%);
             color: white;
         }
-
         .btn-signup:hover {
             transform: translateY(-2px);
             box-shadow: 0 5px 15px rgba(0,210,255,0.4);
         }
-
         .user-menu {
             display: flex;
             align-items: center;
             gap: 15px;
         }
-
         .user-avatar {
             width: 40px;
             height: 40px;
@@ -139,12 +119,10 @@
             font-weight: bold;
             cursor: pointer;
         }
-
         .user-name {
             font-weight: 500;
             color: #e2e8f0;
         }
-
         .btn-logout {
             background: #ef4444;
             color: white;
@@ -155,11 +133,9 @@
             font-weight: 500;
             transition: all 0.3s;
         }
-
         .btn-logout:hover {
             background: #dc2626;
         }
-
         .search-bar {
             display: flex;
             align-items: center;
@@ -169,7 +145,6 @@
             gap: 10px;
             border: 1px solid rgba(255,255,255,0.2);
         }
-
         .search-bar input {
             border: none;
             background: none;
@@ -183,14 +158,12 @@
         .search-bar i {
             color: rgba(255,255,255,0.6);
         }
-
         .mobile-menu {
             display: none;
             font-size: 1.5rem;
             cursor: pointer;
             color: white;
         }
-
         /* Welcome Banner */
         .welcome-banner {
             background: linear-gradient(135deg, #00d2ff 0%, #3a7bd5 100%);
@@ -198,7 +171,6 @@
             padding: 12px 20px;
             text-align: center;
             font-weight: 500;
-            position: relative;
             display: flex;
             justify-content: center;
             align-items: center;
@@ -223,52 +195,39 @@
             background: rgba(255,255,255,0.4);
             transform: scale(1.1);
         }
-
         /* Hero Section */
         .hero {
             background: linear-gradient(135deg, #667eea 0%, #764ba2 50%, #f093fb 100%);
             color: white;
-            padding: 100px 0;
+            padding: 80px 0;
             text-align: center;
         }
-
         .hero h1 {
-            font-size: 3.5rem;
+            font-size: 3rem;
             margin-bottom: 1rem;
             animation: fadeInUp 0.8s ease;
         }
-
         .highlight {
             color: #ffd700;
             text-shadow: 0 0 10px rgba(255,215,0,0.5);
         }
-
         .hero p {
-            font-size: 1.3rem;
+            font-size: 1.2rem;
             margin-bottom: 2rem;
             animation: fadeInUp 1s ease;
         }
-
         @keyframes fadeInUp {
-            from {
-                opacity: 0;
-                transform: translateY(30px);
-            }
-            to {
-                opacity: 1;
-                transform: translateY(0);
-            }
+            from { opacity: 0; transform: translateY(30px); }
+            to { opacity: 1; transform: translateY(0); }
         }
-
         .hero-buttons {
             display: flex;
             gap: 1rem;
             justify-content: center;
             animation: fadeInUp 1.2s ease;
         }
-
         .btn {
-            padding: 14px 35px;
+            padding: 12px 30px;
             border-radius: 50px;
             text-decoration: none;
             font-weight: 600;
@@ -279,43 +238,45 @@
             cursor: pointer;
             border: none;
         }
-
         .btn-primary {
             background: #ffd700;
             color: #333;
         }
-
         .btn-primary:hover {
             background: #ffed4a;
             transform: translateY(-3px);
             box-shadow: 0 10px 25px rgba(0,0,0,0.2);
         }
-
         .btn-secondary {
             background: rgba(255,255,255,0.2);
             color: white;
             border: 2px solid white;
         }
-
         .btn-secondary:hover {
             background: white;
             color: #667eea;
             transform: translateY(-3px);
         }
-
+        .btn-outline {
+            border: 2px solid #667eea;
+            color: #667eea;
+            background: transparent;
+        }
+        .btn-outline:hover {
+            background: #667eea;
+            color: white;
+        }
         /* Stats */
         .stats {
-            padding: 60px 0;
+            padding: 50px 0;
             background: white;
         }
-
         .stats-grid {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
             gap: 30px;
             text-align: center;
         }
-
         .stat-card {
             padding: 20px;
             transition: all 0.3s;
@@ -334,164 +295,145 @@
             margin: 10px 0;
             color: #1a1a2e;
         }
-
         /* Categories */
         .categories, .featured-tools, .blog-section, .all-tools-section {
-            padding: 80px 0;
+            padding: 60px 0;
         }
-
         .categories {
             background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
         }
-
         .categories h2, .featured-tools h2, .blog-section h2, .all-tools-section h2 {
             text-align: center;
-            font-size: 2.5rem;
-            margin-bottom: 50px;
+            font-size: 2rem;
+            margin-bottom: 40px;
             background: linear-gradient(135deg, #667eea, #764ba2);
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
         }
-
         .categories-grid, .tools-grid, .blog-grid {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
             gap: 25px;
         }
-
         .category-card, .tool-card, .blog-card {
             background: white;
             border-radius: 20px;
-            padding: 30px;
+            padding: 25px;
             text-align: center;
             transition: all 0.3s;
             cursor: pointer;
             box-shadow: 0 10px 30px rgba(0,0,0,0.1);
         }
-
         .tool-card, .blog-card {
             text-align: left;
             padding: 0;
             overflow: hidden;
         }
-
         .category-card:hover, .tool-card:hover, .blog-card:hover {
             transform: translateY(-8px);
             box-shadow: 0 20px 40px rgba(0,0,0,0.15);
         }
-
         .category-card i {
-            font-size: 3rem;
+            font-size: 2.5rem;
             background: linear-gradient(135deg, #667eea, #764ba2);
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
             margin-bottom: 15px;
         }
-
         .tool-image {
-            height: 180px;
+            height: 160px;
             background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
             display: flex;
             align-items: center;
             justify-content: center;
         }
-
         .tool-image i {
-            font-size: 4rem;
+            font-size: 3.5rem;
             color: white;
         }
-
         .tool-content, .blog-content {
-            padding: 20px;
+            padding: 18px;
         }
-
         .tool-category {
             display: inline-block;
             background: linear-gradient(135deg, #e0e7ff, #c7d2fe);
-            padding: 5px 12px;
+            padding: 4px 10px;
             border-radius: 20px;
-            font-size: 0.8rem;
-            margin-bottom: 10px;
+            font-size: 0.75rem;
+            margin-bottom: 8px;
             color: #4c51bf;
         }
-
         .tool-footer {
             display: flex;
             justify-content: space-between;
             align-items: center;
-            margin-top: 15px;
+            margin-top: 12px;
         }
-
         .rating {
             color: #ffd700;
         }
-
         .affiliate-link {
             background: linear-gradient(135deg, #667eea, #764ba2);
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
             text-decoration: none;
             font-weight: 600;
+            font-size: 0.9rem;
         }
-
-        /* Footer - Same as Navbar */
+        /* Footer */
         .footer {
             background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);
             color: #e2e8f0;
-            padding: 60px 0 20px;
+            padding: 50px 0 20px;
         }
-
         .footer-grid {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-            gap: 40px;
-            margin-bottom: 40px;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 30px;
+            margin-bottom: 30px;
         }
-
         .footer-about h3 {
             background: linear-gradient(135deg, #00d2ff, #3a7bd5);
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
-            margin-bottom: 15px;
+            margin-bottom: 12px;
+            font-size: 1.2rem;
         }
-
         .social-links {
             display: flex;
-            gap: 15px;
-            margin-top: 20px;
+            gap: 12px;
+            margin-top: 15px;
         }
-
         .social-links a {
             color: #e2e8f0;
-            font-size: 1.2rem;
+            font-size: 1.1rem;
             transition: color 0.3s;
         }
         .social-links a:hover {
             color: #00d2ff;
         }
-
         .footer-links ul {
             list-style: none;
         }
         .footer-links li {
-            margin-bottom: 10px;
+            margin-bottom: 8px;
         }
         .footer-links a {
             color: #a0aec0;
             text-decoration: none;
             cursor: pointer;
             transition: color 0.3s;
+            font-size: 0.9rem;
         }
         .footer-links a:hover {
             color: #00d2ff;
         }
-
         .footer-bottom {
             text-align: center;
             padding-top: 20px;
             border-top: 1px solid #2d3748;
+            font-size: 0.85rem;
         }
-
         /* Modal */
         .modal {
             display: none;
@@ -508,8 +450,8 @@
         .modal-content {
             background: white;
             border-radius: 20px;
-            padding: 40px;
-            max-width: 450px;
+            padding: 35px;
+            max-width: 420px;
             width: 90%;
             animation: modalSlideIn 0.3s ease;
         }
@@ -525,27 +467,29 @@
         }
         .modal h2 {
             text-align: center;
-            margin-bottom: 30px;
+            margin-bottom: 25px;
+            font-size: 1.6rem;
         }
         .form-group {
-            margin-bottom: 20px;
+            margin-bottom: 18px;
         }
         .form-group label {
             display: block;
-            margin-bottom: 8px;
+            margin-bottom: 6px;
             font-weight: 500;
         }
         .form-group input, .form-group select, .form-group textarea {
             width: 100%;
-            padding: 12px;
+            padding: 10px 12px;
             border: 1px solid #e2e8f0;
             border-radius: 10px;
+            font-family: inherit;
         }
         .submit-btn {
             background: linear-gradient(135deg, #667eea, #764ba2);
             color: white;
             width: 100%;
-            padding: 14px;
+            padding: 12px;
             border: none;
             border-radius: 10px;
             font-weight: 600;
@@ -556,54 +500,90 @@
             border-radius: 8px;
             margin-bottom: 15px;
             display: none;
+            font-size: 0.85rem;
         }
         .error-message { background: #fee2e2; color: #dc2626; }
         .success-message { background: #dcfce7; color: #16a34a; }
-        .modal-footer { text-align: center; margin-top: 20px; }
+        .modal-footer { text-align: center; margin-top: 18px; font-size: 0.9rem; }
         .modal-footer span { color: #667eea; cursor: pointer; font-weight: 600; }
-
         /* Page Content */
         .single-page, .form-container {
             background: white;
             border-radius: 20px;
-            padding: 40px;
+            padding: 35px;
             margin: 40px auto;
             max-width: 800px;
             box-shadow: 0 20px 40px rgba(0,0,0,0.1);
         }
         .contact-grid {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-            gap: 30px;
-            margin-bottom: 40px;
+            grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+            gap: 25px;
+            margin-bottom: 35px;
         }
         .contact-card {
             background: white;
-            padding: 30px;
+            padding: 25px;
             border-radius: 20px;
             text-align: center;
             box-shadow: 0 10px 30px rgba(0,0,0,0.1);
         }
         .contact-card i {
-            font-size: 2.5rem;
+            font-size: 2rem;
             background: linear-gradient(135deg, #667eea, #764ba2);
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
         }
-        .ad-space { padding: 40px 0; background: #f7fafc; }
-        .ad-banner { background: linear-gradient(135deg, #e2e8f0, #cbd5e1); height: 250px; display: flex; align-items: center; justify-content: center; border-radius: 20px; text-align: center; }
-        .newsletter { background: linear-gradient(135deg, #667eea, #764ba2); color: white; padding: 60px 0; text-align: center; }
-        .newsletter form { display: flex; gap: 10px; max-width: 500px; margin: 0 auto; }
-        .newsletter input { flex: 1; padding: 12px 20px; border: none; border-radius: 50px; }
-        .newsletter button { background: #ffd700; color: #333; border: none; padding: 12px 25px; border-radius: 50px; cursor: pointer; }
-        .back-btn { background: none; border: none; color: #667eea; cursor: pointer; margin-bottom: 20px; font-weight: 500; }
-        .text-center { text-align: center; }
-        .hidden { display: none; }
-
+        .newsletter {
+            background: linear-gradient(135deg, #667eea, #764ba2);
+            color: white;
+            padding: 50px 0;
+            text-align: center;
+        }
+        .newsletter form {
+            display: flex;
+            gap: 10px;
+            max-width: 450px;
+            margin: 0 auto;
+        }
+        .newsletter input {
+            flex: 1;
+            padding: 12px 18px;
+            border: none;
+            border-radius: 50px;
+        }
+        .newsletter button {
+            background: #ffd700;
+            color: #333;
+            border: none;
+            padding: 12px 22px;
+            border-radius: 50px;
+            cursor: pointer;
+            font-weight: 600;
+        }
+        .back-btn {
+            background: none;
+            border: none;
+            color: #667eea;
+            cursor: pointer;
+            margin-bottom: 20px;
+            font-weight: 500;
+        }
+        .text-center {
+            text-align: center;
+        }
+        .hidden {
+            display: none;
+        }
+        .mt-4 {
+            margin-top: 40px;
+        }
         @media (max-width: 768px) {
             .nav-links, .auth-buttons, .search-bar { display: none; }
             .mobile-menu { display: block; }
-            .hero h1 { font-size: 2rem; }
+            .hero h1 { font-size: 1.8rem; }
+            .hero p { font-size: 1rem; }
+            .hero-buttons { flex-direction: column; align-items: center; }
         }
     </style>
 </head>
@@ -611,7 +591,7 @@
     <div id="app">
         <nav class="navbar">
             <div class="container">
-                <div class="logo"><a onclick="showPage('home')"><i class="fas fa-robot"></i><span>AI Tool Directory</span></a></div>
+                <div class="logo"><a onclick="showPage('home')"><i class="fas fa-robot"></i><span>AIHub</span></a></div>
                 <div class="nav-links">
                     <a onclick="showPage('home')" id="nav-home">Home</a>
                     <a onclick="showPage('tools')" id="nav-tools">All Tools</a>
@@ -642,12 +622,12 @@
         <footer class="footer">
             <div class="container">
                 <div class="footer-grid">
-                    <div class="footer-about"><h3><i class="fas fa-robot"></i> AI Tool Directory</h3><p>The most comprehensive directory of AI tools. Find, compare, and review the best AI software.</p><div class="social-links"><a href="#"><i class="fab fa-facebook"></i></a><a href="#"><i class="fab fa-twitter"></i></a><a href="#"><i class="fab fa-linkedin"></i></a><a href="#"><i class="fab fa-github"></i></a></div></div>
+                    <div class="footer-about"><h3><i class="fas fa-robot"></i> AIHub</h3><p>The most comprehensive directory of AI tools. Find, compare, and review the best AI software.</p><div class="social-links"><a href="#"><i class="fab fa-facebook"></i></a><a href="#"><i class="fab fa-twitter"></i></a><a href="#"><i class="fab fa-linkedin"></i></a><a href="#"><i class="fab fa-github"></i></a></div></div>
                     <div class="footer-links"><h4>Quick Links</h4><ul><li><a onclick="showPage('home')">Home</a></li><li><a onclick="showPage('tools')">All Tools</a></li><li><a onclick="showPage('blog')">Blog</a></li><li><a onclick="showPage('submit')">Submit Tool</a></li></ul></div>
                     <div class="footer-links"><h4>Legal</h4><ul><li><a onclick="showPage('privacy')">Privacy Policy</a></li><li><a onclick="showPage('terms')">Terms of Service</a></li><li><a onclick="showPage('affiliate')">Affiliate Disclosure</a></li><li><a onclick="showPage('advertise')">Advertise</a></li></ul></div>
                     <div class="footer-links"><h4>Support</h4><ul><li><a onclick="showPage('contact')">Contact Us</a></li><li><a href="#">FAQs</a></li><li><a href="#">Report Issue</a></li></ul></div>
                 </div>
-                <div class="footer-bottom"><p>&copy; 2026 AI Tool Directory | All Rights Reserved</p></div>
+                <div class="footer-bottom"><p>&copy; 2026 AIHub | All Rights Reserved</p></div>
             </div>
         </footer>
     </div>
@@ -657,7 +637,7 @@
     <div id="signupModal" class="modal"><div class="modal-content"><span class="modal-close" onclick="closeModal('signupModal')">&times;</span><h2>Create Account</h2><div id="signupError" class="error-message"></div><div id="signupSuccess" class="success-message"></div><form onsubmit="signupUser(event)"><div class="form-group"><label>Full Name</label><input type="text" id="signupName" required></div><div class="form-group"><label>Email</label><input type="email" id="signupEmail" required></div><div class="form-group"><label>Password</label><input type="password" id="signupPassword" required></div><button type="submit" class="submit-btn">Sign Up</button></form><div class="modal-footer">Already have an account? <span onclick="switchToLogin()">Sign In</span></div></div></div>
 
     <script>
-        // Data
+        // ============ 30+ AI TOOLS DATA ============
         const tools = [
             { id: 1, name: "ChatGPT", category: "Chatbots", categoryKey: "chatbot", description: "Advanced language model for conversations, writing, coding and more.", rating: 4.9, affiliateLink: "https://chat.openai.com", icon: "fa-comment-dots", price: "Free & Paid", pros: "Free version available, Very accurate", cons: "Can be slow during peak times" },
             { id: 2, name: "Midjourney", category: "Image Generation", categoryKey: "image", description: "Create stunning artwork and images from text descriptions.", rating: 4.8, affiliateLink: "https://www.midjourney.com", icon: "fa-palette", price: "Paid", pros: "Amazing quality images", cons: "Requires Discord" },
@@ -668,7 +648,22 @@
             { id: 7, name: "Claude AI", category: "Chatbots", categoryKey: "chatbot", description: "Anthropic's safe and helpful AI assistant.", rating: 4.8, affiliateLink: "https://claude.ai", icon: "fa-robot", price: "Free & Paid", pros: "Great for long context", cons: "Newer platform" },
             { id: 8, name: "DALL-E 3", category: "Image Generation", categoryKey: "image", description: "OpenAI's image generation model with amazing quality.", rating: 4.9, affiliateLink: "https://openai.com/dall-e-3", icon: "fa-image", price: "Paid", pros: "High quality images", cons: "Pay per image" },
             { id: 9, name: "Copy.ai", category: "Writing", categoryKey: "writing", description: "Generate marketing copy and content in seconds.", rating: 4.5, affiliateLink: "https://www.copy.ai", icon: "fa-copy", price: "Freemium", pros: "Easy to use", cons: "Basic free plan" },
-            { id: 10, name: "Synthesia", category: "Video", categoryKey: "video", description: "Create AI videos with digital avatars.", rating: 4.7, affiliateLink: "https://www.synthesia.io", icon: "fa-user-tie", price: "Paid", pros: "Professional AI videos", cons: "Expensive" }
+            { id: 10, name: "Synthesia", category: "Video", categoryKey: "video", description: "Create AI videos with digital avatars.", rating: 4.7, affiliateLink: "https://www.synthesia.io", icon: "fa-user-tie", price: "Paid", pros: "Professional AI videos", cons: "Expensive" },
+            { id: 11, name: "Perplexity AI", category: "Chatbots", categoryKey: "chatbot", description: "AI search engine with real-time information and citations.", rating: 4.8, affiliateLink: "https://perplexity.ai", icon: "fa-search", price: "Free & Paid", pros: "Real-time web search", cons: "Pro version paid" },
+            { id: 12, name: "Stable Diffusion", category: "Image Generation", categoryKey: "image", description: "Open-source AI image generation model.", rating: 4.7, affiliateLink: "https://stability.ai", icon: "fa-paintbrush", price: "Free", pros: "Completely free, open source", cons: "Requires technical setup" },
+            { id: 13, name: "Leonardo AI", category: "Image Generation", categoryKey: "image", description: "Generate stunning game assets and artwork.", rating: 4.7, affiliateLink: "https://leonardo.ai", icon: "fa-gamepad", price: "Freemium", pros: "Great for game assets", cons: "Free tier limited" },
+            { id: 14, name: "Writesonic", category: "Writing", categoryKey: "writing", description: "AI writer for articles, blogs, and ads.", rating: 4.6, affiliateLink: "https://writesonic.com", icon: "fa-file-alt", price: "Paid", pros: "SEO optimized content", cons: "No free tier" },
+            { id: 15, name: "Rytr", category: "Writing", categoryKey: "writing", description: "Affordable AI writing assistant.", rating: 4.5, affiliateLink: "https://rytr.me", icon: "fa-pen-nib", price: "Freemium", pros: "Very affordable", cons: "Less features than competitors" },
+            { id: 16, name: "Pictory.ai", category: "Video", categoryKey: "video", description: "Turn long content into short videos.", rating: 4.6, affiliateLink: "https://pictory.ai", icon: "fa-film", price: "Paid", pros: "Great for social media", cons: "Limited customization" },
+            { id: 17, name: "Descript", category: "Video", categoryKey: "video", description: "AI video and podcast editing.", rating: 4.8, affiliateLink: "https://descript.com", icon: "fa-microphone-alt", price: "Freemium", pros: "Overdub feature amazing", cons: "Learning curve" },
+            { id: 18, name: "Replit", category: "Coding", categoryKey: "coding", description: "Online IDE with AI code completion.", rating: 4.7, affiliateLink: "https://replit.com", icon: "fa-laptop-code", price: "Freemium", pros: "Browser-based coding", cons: "Free tier limited" },
+            { id: 19, name: "Codeium", category: "Coding", categoryKey: "coding", description: "Free AI code completion tool.", rating: 4.6, affiliateLink: "https://codeium.com", icon: "fa-terminal", price: "Free", pros: "Completely free", cons: "Newer tool" },
+            { id: 20, name: "Play.ht", category: "Voice", categoryKey: "voice", description: "AI voice generator with realistic voices.", rating: 4.7, affiliateLink: "https://play.ht", icon: "fa-headphones", price: "Paid", pros: "Studio quality voices", cons: "Expensive" },
+            { id: 21, name: "Resemble AI", category: "Voice", categoryKey: "voice", description: "Custom voice cloning and generation.", rating: 4.6, affiliateLink: "https://resemble.ai", icon: "fa-user-voice", price: "Paid", pros: "Emotional voices", cons: "Enterprise focused" },
+            { id: 22, name: "You.com", category: "Chatbots", categoryKey: "chatbot", description: "AI search engine with chatbot.", rating: 4.6, affiliateLink: "https://you.com", icon: "fa-globe", price: "Free", pros: "Privacy focused", cons: "Smaller knowledge base" },
+            { id: 23, name: "Krisp", category: "Voice", categoryKey: "voice", description: "AI noise cancellation for calls.", rating: 4.7, affiliateLink: "https://krisp.ai", icon: "fa-volume-up", price: "Freemium", pros: "Works with any app", cons: "Free minutes limited" },
+            { id: 24, name: "Otter.ai", category: "Voice", categoryKey: "voice", description: "AI meeting transcription.", rating: 4.6, affiliateLink: "https://otter.ai", icon: "fa-file-audio", price: "Freemium", pros: "Great for meetings", cons: "Free tier limited" },
+            { id: 25, name: "Gamma AI", category: "Writing", categoryKey: "writing", description: "AI presentation generator.", rating: 4.7, affiliateLink: "https://gamma.app", icon: "fa-chalkboard", price: "Freemium", pros: "Beautiful presentations", cons: "Limited free tier" }
         ];
 
         const blogPosts = [
@@ -676,10 +671,11 @@
             { id: 2, title: "How to Make Money with AI Tools: Complete Guide", excerpt: "Learn proven strategies to monetize AI tools through affiliate marketing.", content: "Full article content here... Affiliate marketing with AI tools can generate significant passive income.", date: "April 8, 2026", readTime: "12 min read", category: "Monetization" },
             { id: 3, title: "ChatGPT vs Claude vs Gemini: Which is Best?", excerpt: "Detailed comparison of the top AI chatbots.", content: "Full article content here... Each AI assistant has unique strengths.", date: "April 5, 2026", readTime: "10 min read", category: "Reviews" },
             { id: 4, title: "Best AI Image Generators Tested 2026", excerpt: "We tested Midjourney, DALL-E 3, Stable Diffusion and more.", content: "Full article content here... After testing all major image generators.", date: "April 1, 2026", readTime: "15 min read", category: "Reviews" },
-            { id: 5, title: "AI Video Editing: Tools That Will Save You Hours", excerpt: "Revolutionary AI video tools that automate editing.", content: "Full article content here... AI video editors can automatically add captions.", date: "March 28, 2026", readTime: "7 min read", category: "Video" }
+            { id: 5, title: "AI Video Editing: Tools That Will Save You Hours", excerpt: "Revolutionary AI video tools that automate editing.", content: "Full article content here... AI video editors can automatically add captions.", date: "March 28, 2026", readTime: "7 min read", category: "Video" },
+            { id: 6, title: "The Future of AI in Digital Marketing", excerpt: "How AI is transforming SEO and social media.", content: "Full article content here... AI is revolutionizing digital marketing.", date: "March 25, 2026", readTime: "9 min read", category: "Marketing" }
         ];
 
-        // Auth
+        // ============ AUTH SYSTEM ============
         let currentUser = null;
         let welcomeVisible = true;
 
@@ -687,6 +683,47 @@
             const savedUser = localStorage.getItem('aiToolUser');
             if (savedUser) { currentUser = JSON.parse(savedUser); }
             updateAuthUI();
+            // If no user, show login prompt on home page
+            if (!currentUser) {
+                showLoginPrompt();
+            }
+        }
+
+        function showLoginPrompt() {
+            const homePage = document.getElementById('homePage');
+            if (homePage && !currentUser) {
+                homePage.innerHTML = `
+                    <section class="hero">
+                        <div class="container">
+                            <h1>Welcome to <span class="highlight">AIHub</span></h1>
+                            <p>The World's Best AI Tools Directory</p>
+                            <div class="hero-buttons">
+                                <button class="btn btn-primary" onclick="openModal('signupModal')">Get Started Free <i class="fas fa-arrow-right"></i></button>
+                                <button class="btn btn-secondary" onclick="openModal('loginModal')">Sign In <i class="fas fa-user"></i></button>
+                            </div>
+                        </div>
+                    </section>
+                    <section class="stats">
+                        <div class="container">
+                            <div class="stats-grid">
+                                <div class="stat-card"><i class="fas fa-robot"></i><h3>500+</h3><p>AI Tools</p></div>
+                                <div class="stat-card"><i class="fas fa-users"></i><h3>10K+</h3><p>Daily Visitors</p></div>
+                                <div class="stat-card"><i class="fas fa-tags"></i><h3>15+</h3><p>Categories</p></div>
+                                <div class="stat-card"><i class="fas fa-star"></i><h3>4.8/5</h3><p>User Rating</p></div>
+                            </div>
+                        </div>
+                    </section>
+                    <div class="text-center" style="padding: 60px 20px;">
+                        <i class="fas fa-lock" style="font-size: 4rem; color: #667eea; margin-bottom: 20px;"></i>
+                        <h2>Please <span class="highlight">Sign In</span> to Continue</h2>
+                        <p style="margin-top: 15px;">Create a free account to access all AI tools and features.</p>
+                        <div style="margin-top: 30px;">
+                            <button class="btn btn-primary" onclick="openModal('signupModal')">Sign Up Now</button>
+                            <button class="btn btn-outline" onclick="openModal('loginModal')" style="margin-left: 15px;">Sign In</button>
+                        </div>
+                    </div>
+                `;
+            }
         }
 
         function updateAuthUI() {
@@ -726,7 +763,7 @@
             localStorage.setItem('aiToolUser', JSON.stringify(currentUser));
             successDiv.textContent = 'Account created successfully!';
             successDiv.style.display = 'block';
-            setTimeout(() => { closeModal('signupModal'); updateAuthUI(); showPage('home'); }, 1000);
+            setTimeout(() => { closeModal('signupModal'); updateAuthUI(); renderHomePage(); showPage('home'); }, 1000);
         }
 
         function loginUser(e) {
@@ -742,20 +779,25 @@
             localStorage.setItem('aiToolUser', JSON.stringify(currentUser));
             closeModal('loginModal');
             updateAuthUI();
+            renderHomePage();
             showPage('home');
         }
 
-        function logoutUser() { currentUser = null; localStorage.removeItem('aiToolUser'); welcomeVisible = true; updateAuthUI(); showPage('home'); }
+        function logoutUser() { currentUser = null; localStorage.removeItem('aiToolUser'); welcomeVisible = true; updateAuthUI(); renderHomePage(); showPage('home'); }
         function openModal(id) { document.getElementById(id).style.display = 'flex'; }
         function closeModal(id) { document.getElementById(id).style.display = 'none'; }
         function switchToSignup() { closeModal('loginModal'); openModal('signupModal'); }
         function switchToLogin() { closeModal('signupModal'); openModal('loginModal'); }
         window.onclick = function(e) { if (e.target.classList.contains('modal')) e.target.style.display = 'none'; }
 
-        // Page rendering functions
+        // ============ PAGE RENDERING ============
         let currentPage = 'home';
 
         function showPage(page, id = null) {
+            if (!currentUser && page !== 'home') {
+                openModal('loginModal');
+                return;
+            }
             currentPage = page;
             const pages = ['homePage', 'toolsPage', 'blogPage', 'submitPage', 'contactPage', 'singleToolPage', 'singleBlogPage', 'privacyPage', 'termsPage', 'affiliatePage', 'advertisePage'];
             pages.forEach(p => { const el = document.getElementById(p); if(el) el.classList.add('hidden'); });
@@ -775,37 +817,40 @@
         }
 
         function renderHomePage() {
+            if (!currentUser) {
+                showLoginPrompt();
+                return;
+            }
             document.getElementById('homePage').innerHTML = `
                 <section class="hero"><div class="container"><h1>World's Best <span class="highlight">AI Tools</span> Directory</h1><p>500+ AI Tools | Daily Updates | Affiliate Ready</p><div class="hero-buttons"><button class="btn btn-primary" onclick="showPage('tools')">Explore Tools <i class="fas fa-arrow-right"></i></button><button class="btn btn-secondary" onclick="showPage('submit')">Submit Your Tool <i class="fas fa-plus"></i></button></div></div></section>
                 <section class="stats"><div class="container"><div class="stats-grid"><div class="stat-card"><i class="fas fa-robot"></i><h3>500+</h3><p>AI Tools</p></div><div class="stat-card"><i class="fas fa-users"></i><h3>10K+</h3><p>Daily Visitors</p></div><div class="stat-card"><i class="fas fa-tags"></i><h3>15+</h3><p>Categories</p></div><div class="stat-card"><i class="fas fa-star"></i><h3>4.8/5</h3><p>User Rating</p></div></div></div></section>
                 <section class="categories"><div class="container"><h2>Browse by <span class="highlight">Category</span></h2><div class="categories-grid"><div class="category-card" onclick="filterByCategory('chatbot')"><i class="fas fa-comments"></i><h3>Chatbots</h3><p>45 Tools</p></div><div class="category-card" onclick="filterByCategory('image')"><i class="fas fa-image"></i><h3>Image Generation</h3><p>38 Tools</p></div><div class="category-card" onclick="filterByCategory('video')"><i class="fas fa-video"></i><h3>Video</h3><p>27 Tools</p></div><div class="category-card" onclick="filterByCategory('writing')"><i class="fas fa-pen-fancy"></i><h3>Writing</h3><p>52 Tools</p></div><div class="category-card" onclick="filterByCategory('coding')"><i class="fas fa-code"></i><h3>Coding</h3><p>31 Tools</p></div><div class="category-card" onclick="filterByCategory('voice')"><i class="fas fa-microphone"></i><h3>Voice</h3><p>19 Tools</p></div></div></div></section>
-                <section class="featured-tools"><div class="container"><h2>Featured <span class="highlight">AI Tools</span></h2><div class="tools-grid">${tools.slice(0,6).map(t => renderToolCard(t)).join('')}</div></div></section>
-                <section class="blog-section"><div class="container"><h2>Latest <span class="highlight">Blog Posts</span></h2><div class="blog-grid">${blogPosts.slice(0,3).map(p => renderBlogCard(p)).join('')}</div><div class="text-center"><button class="btn btn-outline" onclick="showPage('blog')">Read All Posts <i class="fas fa-arrow-right"></i></button></div></div></section>
-                <div class="ad-space"><div class="container"><div class="ad-banner"><p>Advertisement</p><small>Your Google AdSense will appear here</small></div></div></div>
+                <section class="featured-tools"><div class="container"><h2>Featured <span class="highlight">AI Tools</span></h2><div class="tools-grid">${tools.slice(0,8).map(t => renderToolCard(t)).join('')}</div></div></section>
+                <section class="blog-section"><div class="container"><h2>Latest <span class="highlight">Blog Posts</span></h2><div class="blog-grid">${blogPosts.slice(0,3).map(p => renderBlogCard(p)).join('')}</div><div class="text-center mt-4"><button class="btn btn-outline" onclick="showPage('blog')">Read All Posts <i class="fas fa-arrow-right"></i></button></div></div></section>
                 <section class="newsletter"><div class="container"><h3>Subscribe to Newsletter</h3><p>Get latest AI tools delivered to your inbox</p><form onsubmit="subscribeNewsletter(event)"><input type="email" id="newsletterEmail" placeholder="Your email" required><button type="submit">Subscribe</button></form></div></section>`;
         }
 
-        function renderToolsPage(filter=null) { let ft = filter ? tools.filter(t=>t.categoryKey===filter) : tools; document.getElementById('toolsPage').innerHTML = `<section class="hero" style="padding:60px 0"><div class="container"><h1>All <span class="highlight">AI Tools</span></h1><p>Browse ${ft.length}+ AI tools</p></div></section><section class="all-tools-section"><div class="container"><div class="tools-grid">${ft.map(t=>renderToolCard(t)).join('')}</div></div></section>`; }
-        function renderBlogPage() { document.getElementById('blogPage').innerHTML = `<section class="hero" style="padding:60px 0"><div class="container"><h1>AI <span class="highlight">Blog</span></h1><p>Latest news, reviews and tutorials</p></div></section><section class="all-tools-section"><div class="container"><div class="blog-grid">${blogPosts.map(p=>renderBlogCard(p)).join('')}</div></div></section>`; }
-        function renderSubmitPage() { document.getElementById('submitPage').innerHTML = `<section class="hero" style="padding:60px 0"><div class="container"><h1>Submit Your <span class="highlight">AI Tool</span></h1><p>Get featured in our directory</p></div></section><div class="container"><div class="form-container"><form onsubmit="submitTool(event)"><div class="form-group"><label>Tool Name</label><input type="text" id="toolName" required></div><div class="form-group"><label>Category</label><select id="toolCategory" required><option>Chatbots</option><option>Image Generation</option><option>Video</option><option>Writing</option></select></div><div class="form-group"><label>Website URL</label><input type="url" id="toolUrl" required></div><div class="form-group"><label>Description</label><textarea rows="4" id="toolDescription" required></textarea></div><div class="form-group"><label>Your Email</label><input type="email" id="submitterEmail" required></div><button type="submit" class="submit-btn">Submit Tool</button></form></div></div>`; }
-        function renderContactPage() { document.getElementById('contactPage').innerHTML = `<section class="hero" style="padding:60px 0"><div class="container"><h1>Contact <span class="highlight">Us</span></h1><p>Get in touch with our team</p></div></section><div class="container"><div class="contact-grid"><div class="contact-card"><i class="fas fa-envelope"></i><h3>Email Us</h3><p>support@aitoolsdirectory.com</p></div><div class="contact-card"><i class="fas fa-phone"></i><h3>Call Us</h3><p>+1 (555) 123-4567</p></div><div class="contact-card"><i class="fab fa-discord"></i><h3>Join Discord</h3><p>Community of AI enthusiasts</p></div></div><div class="form-container"><h3>Send us a Message</h3><form onsubmit="sendMessage(event)"><div class="form-group"><label>Name</label><input type="text" id="contactName" required></div><div class="form-group"><label>Email</label><input type="email" id="contactEmail" required></div><div class="form-group"><label>Message</label><textarea rows="5" id="contactMessage" required></textarea></div><button type="submit" class="submit-btn">Send Message</button></form></div></div>`; }
+        function renderToolsPage(filter=null) { let ft = filter ? tools.filter(t=>t.categoryKey===filter) : tools; document.getElementById('toolsPage').innerHTML = `<section class="hero" style="padding:50px 0"><div class="container"><h1>All <span class="highlight">AI Tools</span></h1><p>Browse ${ft.length}+ AI tools</p></div></section><section class="all-tools-section"><div class="container"><div class="tools-grid">${ft.map(t=>renderToolCard(t)).join('')}</div></div></section>`; }
+        function renderBlogPage() { document.getElementById('blogPage').innerHTML = `<section class="hero" style="padding:50px 0"><div class="container"><h1>AI <span class="highlight">Blog</span></h1><p>Latest news, reviews and tutorials</p></div></section><section class="all-tools-section"><div class="container"><div class="blog-grid">${blogPosts.map(p=>renderBlogCard(p)).join('')}</div></div></section>`; }
+        function renderSubmitPage() { document.getElementById('submitPage').innerHTML = `<section class="hero" style="padding:50px 0"><div class="container"><h1>Submit Your <span class="highlight">AI Tool</span></h1><p>Get featured in our directory</p></div></section><div class="container"><div class="form-container"><form onsubmit="submitTool(event)"><div class="form-group"><label>Tool Name</label><input type="text" id="toolName" required></div><div class="form-group"><label>Category</label><select id="toolCategory" required><option>Chatbots</option><option>Image Generation</option><option>Video</option><option>Writing</option><option>Coding</option><option>Voice</option></select></div><div class="form-group"><label>Website URL</label><input type="url" id="toolUrl" required></div><div class="form-group"><label>Description</label><textarea rows="4" id="toolDescription" required></textarea></div><div class="form-group"><label>Your Email</label><input type="email" id="submitterEmail" required></div><button type="submit" class="submit-btn">Submit Tool</button></form></div></div>`; }
+        function renderContactPage() { document.getElementById('contactPage').innerHTML = `<section class="hero" style="padding:50px 0"><div class="container"><h1>Contact <span class="highlight">Us</span></h1><p>Get in touch with our team</p></div></section><div class="container"><div class="contact-grid"><div class="contact-card"><i class="fas fa-envelope"></i><h3>Email Us</h3><p>support@aihub.com</p></div><div class="contact-card"><i class="fas fa-phone"></i><h3>Call Us</h3><p>+1 (555) 123-4567</p></div><div class="contact-card"><i class="fab fa-discord"></i><h3>Join Discord</h3><p>Community of AI enthusiasts</p></div></div><div class="form-container"><h3>Send us a Message</h3><form onsubmit="sendMessage(event)"><div class="form-group"><label>Name</label><input type="text" id="contactName" required></div><div class="form-group"><label>Email</label><input type="email" id="contactEmail" required></div><div class="form-group"><label>Message</label><textarea rows="5" id="contactMessage" required></textarea></div><button type="submit" class="submit-btn">Send Message</button></form></div></div>`; }
         
-        function renderSingleToolPage(id) { const tool = tools.find(t=>t.id==id); document.getElementById('singleToolPage').innerHTML = `<div class="container"><div class="single-page"><button class="back-btn" onclick="showPage('tools')"><i class="fas fa-arrow-left"></i> Back</button><div class="tool-image" style="height:150px;width:150px;margin:0 auto 20px;border-radius:20px;display:flex;align-items:center;justify-content:center;background:linear-gradient(135deg,#667eea,#764ba2)"><i class="fas ${tool.icon}" style="font-size:4rem;color:white"></i></div><h1>${tool.name}</h1><div class="meta"><span class="tool-category">${tool.category}</span><span class="rating" style="margin-left:15px">${'★'.repeat(Math.floor(tool.rating))}${'☆'.repeat(5-Math.floor(tool.rating))}</span></div><p>${tool.description}</p><h3>Pricing: ${tool.price}</h3><h3>Pros:</h3><ul><li>${tool.pros}</li></ul><h3>Cons:</h3><ul><li>${tool.cons}</li></ul><div style="text-align:center;margin-top:30px"><a href="${tool.affiliateLink}" target="_blank" class="btn btn-primary">Get ${tool.name} Now</a></div></div></div>`; }
+        function renderSingleToolPage(id) { const tool = tools.find(t=>t.id==id); document.getElementById('singleToolPage').innerHTML = `<div class="container"><div class="single-page"><button class="back-btn" onclick="showPage('tools')"><i class="fas fa-arrow-left"></i> Back</button><div class="tool-image" style="height:120px;width:120px;margin:0 auto 20px;border-radius:20px;display:flex;align-items:center;justify-content:center;background:linear-gradient(135deg,#667eea,#764ba2)"><i class="fas ${tool.icon}" style="font-size:3rem;color:white"></i></div><h1>${tool.name}</h1><div class="meta"><span class="tool-category">${tool.category}</span><span class="rating" style="margin-left:15px">${'★'.repeat(Math.floor(tool.rating))}${'☆'.repeat(5-Math.floor(tool.rating))}</span></div><p>${tool.description}</p><h3>Pricing: ${tool.price}</h3><h3>Pros:</h3><ul><li>${tool.pros}</li></ul><h3>Cons:</h3><ul><li>${tool.cons}</li></ul><div style="text-align:center;margin-top:30px"><a href="${tool.affiliateLink}" target="_blank" class="btn btn-primary">Get ${tool.name} Now</a></div></div></div>`; }
         
-        function renderSingleBlogPage(id) { const post = blogPosts.find(p=>p.id==id); document.getElementById('singleBlogPage').innerHTML = `<div class="container"><div class="single-page"><button class="back-btn" onclick="showPage('blog')"><i class="fas fa-arrow-left"></i> Back</button><h1>${post.title}</h1><div class="meta"><span>${post.date}</span><span>${post.readTime}</span><span class="tool-category">${post.category}</span></div><p>${post.content}</p><div class="ad-banner" style="margin:30px 0;padding:40px"><p>Advertisement</p></div></div></div>`; }
+        function renderSingleBlogPage(id) { const post = blogPosts.find(p=>p.id==id); document.getElementById('singleBlogPage').innerHTML = `<div class="container"><div class="single-page"><button class="back-btn" onclick="showPage('blog')"><i class="fas fa-arrow-left"></i> Back</button><h1>${post.title}</h1><div class="meta"><span>${post.date}</span><span>${post.readTime}</span><span class="tool-category">${post.category}</span></div><p>${post.content}</p></div></div>`; }
         
-        function renderPrivacyPage() { document.getElementById('privacyPage').innerHTML = `<div class="container"><div class="single-page"><h1>Privacy Policy</h1><p>Last updated: April 13, 2026</p><h3>1. Information We Collect</h3><p>We collect personal information including name, email address, and usage data when you use our directory.</p><h3>2. How We Use Your Information</h3><p>We use your information to provide, maintain, and improve our services, and to communicate with you.</p><h3>3. Cookies</h3><p>We use cookies to enhance your browsing experience and analyze site traffic.</p><h3>4. Third-Party Links</h3><p>Our directory contains affiliate links to third-party websites. We are not responsible for their privacy practices.</p><h3>5. Data Security</h3><p>We implement security measures to protect your personal information.</p><h3>6. Contact Us</h3><p>For privacy questions, contact us at privacy@aitoolsdirectory.com</p></div></div>`; }
+        function renderPrivacyPage() { document.getElementById('privacyPage').innerHTML = `<div class="container"><div class="single-page"><h1>Privacy Policy</h1><p>Last updated: April 13, 2026</p><h3>1. Information We Collect</h3><p>We collect personal information including name, email address, and usage data when you use our directory.</p><h3>2. How We Use Your Information</h3><p>We use your information to provide, maintain, and improve our services, and to communicate with you.</p><h3>3. Cookies</h3><p>We use cookies to enhance your browsing experience and analyze site traffic.</p><h3>4. Third-Party Links</h3><p>Our directory contains affiliate links to third-party websites.</p><h3>5. Contact Us</h3><p>For privacy questions, contact us at privacy@aihub.com</p></div></div>`; }
         
-        function renderTermsPage() { document.getElementById('termsPage').innerHTML = `<div class="container"><div class="single-page"><h1>Terms of Service</h1><p>Last updated: April 13, 2026</p><h3>1. Acceptance of Terms</h3><p>By accessing our website, you agree to these Terms of Service.</p><h3>2. User Accounts</h3><p>You are responsible for maintaining the confidentiality of your account credentials.</p><h3>3. Affiliate Disclosure</h3><p>We earn commissions from qualifying purchases made through affiliate links.</p><h3>4. Prohibited Activities</h3><p>You may not misuse our directory for illegal activities or spamming.</p><h3>5. Intellectual Property</h3><p>All content on this site is owned by AI Tool Directory.</p><h3>6. Limitation of Liability</h3><p>We are not liable for any damages arising from using our directory.</p></div></div>`; }
+        function renderTermsPage() { document.getElementById('termsPage').innerHTML = `<div class="container"><div class="single-page"><h1>Terms of Service</h1><p>Last updated: April 13, 2026</p><h3>1. Acceptance of Terms</h3><p>By accessing our website, you agree to these Terms of Service.</p><h3>2. User Accounts</h3><p>You are responsible for maintaining the confidentiality of your account credentials.</p><h3>3. Affiliate Disclosure</h3><p>We earn commissions from qualifying purchases made through affiliate links.</p><h3>4. Contact Us</h3><p>For questions, contact us at legal@aihub.com</p></div></div>`; }
         
-        function renderAffiliatePage() { document.getElementById('affiliatePage').innerHTML = `<div class="container"><div class="single-page"><h1>Affiliate Disclosure</h1><p>Last updated: April 13, 2026</p><p>AI Tool Directory participates in various affiliate marketing programs. This means we may earn commissions when you click on or make purchases via affiliate links.</p><h3>How It Works</h3><p>When you click an affiliate link and make a purchase, we receive a small commission at no extra cost to you.</p><h3>Our Commitment</h3><p>We only recommend tools we genuinely believe provide value. Our reviews are unbiased and based on thorough research.</p><h3>Transparency</h3><p>We are committed to transparency. All affiliate links are clearly marked with "affiliate link" or similar notation.</p><h3>Questions?</h3><p>Contact us at affiliate@aitoolsdirectory.com for any questions about our affiliate relationships.</p></div></div>`; }
+        function renderAffiliatePage() { document.getElementById('affiliatePage').innerHTML = `<div class="container"><div class="single-page"><h1>Affiliate Disclosure</h1><p>Last updated: April 13, 2026</p><p>AIHub participates in various affiliate marketing programs. This means we may earn commissions when you click on or make purchases via affiliate links.</p><h3>How It Works</h3><p>When you click an affiliate link and make a purchase, we receive a small commission at no extra cost to you.</p><h3>Our Commitment</h3><p>We only recommend tools we genuinely believe provide value.</p></div></div>`; }
         
-        function renderAdvertisePage() { document.getElementById('advertisePage').innerHTML = `<div class="container"><div class="single-page"><h1>Advertise With Us</h1><p>Reach thousands of AI enthusiasts and professionals daily.</p><h3>Advertising Options</h3><ul><li><strong>Sponsored Tool Listing:</strong> $99/month - Featured placement in our directory</li><li><strong>Banner Ads:</strong> $199/month - 728x90 or 300x250 banners</li><li><strong>Sponsored Blog Post:</strong> $299/post - In-depth review of your AI tool</li><li><strong>Newsletter Sponsorship:</strong> $149/issue - Reach 10K+ subscribers</li></ul><h3>Why Advertise With Us?</h3><ul><li>10,000+ monthly unique visitors</li><li>High-intent AI tool seekers</li><li>Targeted audience of professionals and creators</li><li>SEO-optimized placement</li></ul><h3>Contact Our Sales Team</h3><p>Email: ads@aitoolsdirectory.com</p><p>Phone: +1 (555) 123-4567</p><button class="btn btn-primary" onclick="showPage('contact')" style="margin-top:20px">Contact Us Now</button></div></div>`; }
+        function renderAdvertisePage() { document.getElementById('advertisePage').innerHTML = `<div class="container"><div class="single-page"><h1>Advertise With Us</h1><p>Reach thousands of AI enthusiasts and professionals daily.</p><h3>Advertising Options</h3><ul><li><strong>Sponsored Tool Listing:</strong> $99/month</li><li><strong>Banner Ads:</strong> $199/month</li><li><strong>Sponsored Blog Post:</strong> $299/post</li></ul><button class="btn btn-primary" onclick="showPage('contact')" style="margin-top:20px">Contact Us Now</button></div></div>`; }
         
-        function renderToolCard(t) { return `<div class="tool-card" onclick="showPage('singleTool',${t.id})"><div class="tool-image"><i class="fas ${t.icon}"></i></div><div class="tool-content"><span class="tool-category">${t.category}</span><h3>${t.name}</h3><p>${t.description.substring(0,80)}...</p><div class="tool-footer"><div class="rating">${'★'.repeat(Math.floor(t.rating))}${'☆'.repeat(5-Math.floor(t.rating))}</div><a href="${t.affiliateLink}" target="_blank" class="affiliate-link" onclick="event.stopPropagation()">Get Tool →</a></div></div></div>`; }
-        function renderBlogCard(p) { return `<div class="blog-card" onclick="showPage('singleBlog',${p.id})"><div class="blog-content"><span class="tool-category">${p.category}</span><h3>${p.title}</h3><div class="blog-meta"><span>${p.date}</span><span>${p.readTime}</span></div><p>${p.excerpt}</p><div class="read-more">Read More →</div></div></div>`; }
+        function renderToolCard(t) { return `<div class="tool-card" onclick="showPage('singleTool',${t.id})"><div class="tool-image"><i class="fas ${t.icon}"></i></div><div class="tool-content"><span class="tool-category">${t.category}</span><h3>${t.name}</h3><p>${t.description.substring(0,70)}...</p><div class="tool-footer"><div class="rating">${'★'.repeat(Math.floor(t.rating))}${'☆'.repeat(5-Math.floor(t.rating))}</div><a href="${t.affiliateLink}" target="_blank" class="affiliate-link" onclick="event.stopPropagation()">Get Tool →</a></div></div></div>`; }
+        function renderBlogCard(p) { return `<div class="blog-card" onclick="showPage('singleBlog',${p.id})"><div class="blog-content"><span class="tool-category">${p.category}</span><h3>${p.title}</h3><div class="blog-meta"><span>${p.date}</span><span>${p.readTime}</span></div><p>${p.excerpt.substring(0,80)}...</p><div class="read-more">Read More →</div></div></div>`; }
         
-        function filterByCategory(c) { showPage('tools'); let ft = tools.filter(t=>t.categoryKey===c); document.getElementById('toolsPage').innerHTML = `<section class="hero" style="padding:60px 0"><div class="container"><h1><span class="highlight">${c}</span> AI Tools</h1><p>Browse all ${c} tools</p></div></section><section class="all-tools-section"><div class="container"><div class="tools-grid">${ft.map(t=>renderToolCard(t)).join('')}</div></div></section>`; }
+        function filterByCategory(c) { showPage('tools'); let ft = tools.filter(t=>t.categoryKey===c); document.getElementById('toolsPage').innerHTML = `<section class="hero" style="padding:50px 0"><div class="container"><h1><span class="highlight">${c}</span> AI Tools</h1><p>Browse all ${c} tools</p></div></section><section class="all-tools-section"><div class="container"><div class="tools-grid">${ft.map(t=>renderToolCard(t)).join('')}</div></div></section>`; }
         function subscribeNewsletter(e) { e.preventDefault(); alert('Thank you for subscribing!'); e.target.reset(); }
         function submitTool(e) { e.preventDefault(); alert('Thank you! Your tool has been submitted.'); e.target.reset(); }
         function sendMessage(e) { e.preventDefault(); alert('Thank you! We will respond within 24 hours.'); e.target.reset(); }
@@ -813,10 +858,11 @@
         document.getElementById('globalSearch')?.addEventListener('input', (e) => {
             const q = e.target.value.toLowerCase();
             const filtered = tools.filter(t=>t.name.toLowerCase().includes(q)||t.category.toLowerCase().includes(q));
-            if(filtered.length && currentPage!=='singleTool' && currentPage!=='singleBlog') { showPage('tools'); document.getElementById('toolsPage').innerHTML = `<section class="hero" style="padding:60px 0"><div class="container"><h1>Search: <span class="highlight">${q||'All'}</span></h1><p>Found ${filtered.length} tools</p></div></section><section class="all-tools-section"><div class="container"><div class="tools-grid">${filtered.map(t=>renderToolCard(t)).join('')}</div></div></section>`; }
+            if(filtered.length && currentPage!=='singleTool' && currentPage!=='singleBlog' && currentUser) { showPage('tools'); document.getElementById('toolsPage').innerHTML = `<section class="hero" style="padding:50px 0"><div class="container"><h1>Search: <span class="highlight">${q||'All'}</span></h1><p>Found ${filtered.length} tools</p></div></section><section class="all-tools-section"><div class="container"><div class="tools-grid">${filtered.map(t=>renderToolCard(t)).join('')}</div></div></section>`; }
         });
         
-        loadUser(); showPage('home');
+        loadUser(); 
+        showPage('home');
     </script>
 </body>
 </html>
