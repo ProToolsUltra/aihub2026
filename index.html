@@ -13,17 +13,20 @@
             padding: 0;
             box-sizing: border-box;
         }
+
         body {
             font-family: 'Inter', sans-serif;
             background: linear-gradient(135deg, #f5f7fa 0%, #e9ecef 100%);
             color: #1a1a2e;
             line-height: 1.6;
         }
+
         .container {
             max-width: 1280px;
             margin: 0 auto;
             padding: 0 20px;
         }
+
         /* Navbar */
         .navbar {
             background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);
@@ -32,12 +35,19 @@
             top: 0;
             z-index: 1000;
         }
+
         .navbar .container {
             display: flex;
             justify-content: space-between;
             align-items: center;
             padding: 1rem 20px;
         }
+
+        /* Logo - LEFT SIDE FIX */
+        .logo {
+            margin-right: auto;
+        }
+
         .logo a {
             display: flex;
             align-items: center;
@@ -50,17 +60,20 @@
             -webkit-text-fill-color: transparent;
             cursor: pointer;
         }
+
         .logo i {
             font-size: 2rem;
             background: linear-gradient(135deg, #00d2ff, #3a7bd5);
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
         }
+
         .nav-links {
             display: flex;
             gap: 2rem;
             align-items: center;
         }
+
         .nav-links a {
             text-decoration: none;
             color: #e2e8f0;
@@ -68,14 +81,17 @@
             transition: all 0.3s;
             cursor: pointer;
         }
+
         .nav-links a:hover, .nav-links a.active {
             color: #00d2ff;
         }
+
         .auth-buttons {
             display: flex;
             gap: 12px;
             align-items: center;
         }
+
         .btn-auth {
             padding: 8px 20px;
             border-radius: 50px;
@@ -85,28 +101,34 @@
             border: none;
             font-size: 0.9rem;
         }
+
         .btn-login {
             background: transparent;
             color: #00d2ff;
             border: 2px solid #00d2ff;
         }
+
         .btn-login:hover {
             background: #00d2ff;
             color: #1a1a2e;
         }
+
         .btn-signup {
             background: linear-gradient(135deg, #00d2ff 0%, #3a7bd5 100%);
             color: white;
         }
+
         .btn-signup:hover {
             transform: translateY(-2px);
             box-shadow: 0 5px 15px rgba(0,210,255,0.4);
         }
+
         .user-menu {
             display: flex;
             align-items: center;
             gap: 15px;
         }
+
         .user-avatar {
             width: 40px;
             height: 40px;
@@ -119,10 +141,12 @@
             font-weight: bold;
             cursor: pointer;
         }
+
         .user-name {
             font-weight: 500;
             color: #e2e8f0;
         }
+
         .btn-logout {
             background: #ef4444;
             color: white;
@@ -133,9 +157,11 @@
             font-weight: 500;
             transition: all 0.3s;
         }
+
         .btn-logout:hover {
             background: #dc2626;
         }
+
         .search-bar {
             display: flex;
             align-items: center;
@@ -144,7 +170,9 @@
             border-radius: 50px;
             gap: 10px;
             border: 1px solid rgba(255,255,255,0.2);
+            margin-left: 20px;
         }
+
         .search-bar input {
             border: none;
             background: none;
@@ -152,18 +180,26 @@
             width: 200px;
             color: white;
         }
+
         .search-bar input::placeholder {
             color: rgba(255,255,255,0.6);
         }
+
         .search-bar i {
             color: rgba(255,255,255,0.6);
         }
+
+        #authSection {
+            margin-left: 15px;
+        }
+
         .mobile-menu {
             display: none;
             font-size: 1.5rem;
             cursor: pointer;
             color: white;
         }
+
         /* Welcome Banner */
         .welcome-banner {
             background: linear-gradient(135deg, #00d2ff 0%, #3a7bd5 100%);
@@ -177,6 +213,7 @@
             gap: 20px;
             flex-wrap: wrap;
         }
+
         .close-welcome {
             background: rgba(255,255,255,0.2);
             border: none;
@@ -191,10 +228,12 @@
             justify-content: center;
             transition: all 0.3s;
         }
+
         .close-welcome:hover {
             background: rgba(255,255,255,0.4);
             transform: scale(1.1);
         }
+
         /* Hero Section */
         .hero {
             background: linear-gradient(135deg, #667eea 0%, #764ba2 50%, #f093fb 100%);
@@ -202,30 +241,36 @@
             padding: 80px 0;
             text-align: center;
         }
+
         .hero h1 {
             font-size: 3rem;
             margin-bottom: 1rem;
             animation: fadeInUp 0.8s ease;
         }
+
         .highlight {
             color: #ffd700;
             text-shadow: 0 0 10px rgba(255,215,0,0.5);
         }
+
         .hero p {
             font-size: 1.2rem;
             margin-bottom: 2rem;
             animation: fadeInUp 1s ease;
         }
+
         @keyframes fadeInUp {
             from { opacity: 0; transform: translateY(30px); }
             to { opacity: 1; transform: translateY(0); }
         }
+
         .hero-buttons {
             display: flex;
             gap: 1rem;
             justify-content: center;
             animation: fadeInUp 1.2s ease;
         }
+
         .btn {
             padding: 12px 30px;
             border-radius: 50px;
@@ -238,70 +283,85 @@
             cursor: pointer;
             border: none;
         }
+
         .btn-primary {
             background: #ffd700;
             color: #333;
         }
+
         .btn-primary:hover {
             background: #ffed4a;
             transform: translateY(-3px);
             box-shadow: 0 10px 25px rgba(0,0,0,0.2);
         }
+
         .btn-secondary {
             background: rgba(255,255,255,0.2);
             color: white;
             border: 2px solid white;
         }
+
         .btn-secondary:hover {
             background: white;
             color: #667eea;
             transform: translateY(-3px);
         }
+
         .btn-outline {
             border: 2px solid #667eea;
             color: #667eea;
             background: transparent;
         }
+
         .btn-outline:hover {
             background: #667eea;
             color: white;
         }
+
         /* Stats */
         .stats {
             padding: 50px 0;
             background: white;
         }
+
         .stats-grid {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
             gap: 30px;
             text-align: center;
         }
+
         .stat-card {
             padding: 20px;
             transition: all 0.3s;
         }
+
         .stat-card:hover {
             transform: translateY(-5px);
         }
+
         .stat-card i {
             font-size: 2.5rem;
             background: linear-gradient(135deg, #667eea, #764ba2);
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
         }
+
         .stat-card h3 {
             font-size: 2rem;
             margin: 10px 0;
             color: #1a1a2e;
         }
+
         /* Categories */
         .categories, .featured-tools, .blog-section, .all-tools-section {
             padding: 60px 0;
         }
+
         .categories {
             background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
         }
+
         .categories h2, .featured-tools h2, .blog-section h2, .all-tools-section h2 {
             text-align: center;
             font-size: 2rem;
@@ -310,11 +370,13 @@
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
         }
+
         .categories-grid, .tools-grid, .blog-grid {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
             gap: 25px;
         }
+
         .category-card, .tool-card, .blog-card {
             background: white;
             border-radius: 20px;
@@ -324,15 +386,18 @@
             cursor: pointer;
             box-shadow: 0 10px 30px rgba(0,0,0,0.1);
         }
+
         .tool-card, .blog-card {
             text-align: left;
             padding: 0;
             overflow: hidden;
         }
+
         .category-card:hover, .tool-card:hover, .blog-card:hover {
             transform: translateY(-8px);
             box-shadow: 0 20px 40px rgba(0,0,0,0.15);
         }
+
         .category-card i {
             font-size: 2.5rem;
             background: linear-gradient(135deg, #667eea, #764ba2);
@@ -340,6 +405,7 @@
             -webkit-text-fill-color: transparent;
             margin-bottom: 15px;
         }
+
         .tool-image {
             height: 160px;
             background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
@@ -347,13 +413,16 @@
             align-items: center;
             justify-content: center;
         }
+
         .tool-image i {
             font-size: 3.5rem;
             color: white;
         }
+
         .tool-content, .blog-content {
             padding: 18px;
         }
+
         .tool-category {
             display: inline-block;
             background: linear-gradient(135deg, #e0e7ff, #c7d2fe);
@@ -363,15 +432,18 @@
             margin-bottom: 8px;
             color: #4c51bf;
         }
+
         .tool-footer {
             display: flex;
             justify-content: space-between;
             align-items: center;
             margin-top: 12px;
         }
+
         .rating {
             color: #ffd700;
         }
+
         .affiliate-link {
             background: linear-gradient(135deg, #667eea, #764ba2);
             -webkit-background-clip: text;
@@ -380,18 +452,21 @@
             font-weight: 600;
             font-size: 0.9rem;
         }
+
         /* Footer */
         .footer {
             background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);
             color: #e2e8f0;
             padding: 50px 0 20px;
         }
+
         .footer-grid {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
             gap: 30px;
             margin-bottom: 30px;
         }
+
         .footer-about h3 {
             background: linear-gradient(135deg, #00d2ff, #3a7bd5);
             -webkit-background-clip: text;
@@ -399,25 +474,31 @@
             margin-bottom: 12px;
             font-size: 1.2rem;
         }
+
         .social-links {
             display: flex;
             gap: 12px;
             margin-top: 15px;
         }
+
         .social-links a {
             color: #e2e8f0;
             font-size: 1.1rem;
             transition: color 0.3s;
         }
+
         .social-links a:hover {
             color: #00d2ff;
         }
+
         .footer-links ul {
             list-style: none;
         }
+
         .footer-links li {
             margin-bottom: 8px;
         }
+
         .footer-links a {
             color: #a0aec0;
             text-decoration: none;
@@ -425,15 +506,18 @@
             transition: color 0.3s;
             font-size: 0.9rem;
         }
+
         .footer-links a:hover {
             color: #00d2ff;
         }
+
         .footer-bottom {
             text-align: center;
             padding-top: 20px;
             border-top: 1px solid #2d3748;
             font-size: 0.85rem;
         }
+
         /* Modal */
         .modal {
             display: none;
@@ -447,6 +531,7 @@
             justify-content: center;
             align-items: center;
         }
+
         .modal-content {
             background: white;
             border-radius: 20px;
@@ -455,29 +540,35 @@
             width: 90%;
             animation: modalSlideIn 0.3s ease;
         }
+
         @keyframes modalSlideIn {
             from { transform: translateY(-50px); opacity: 0; }
             to { transform: translateY(0); opacity: 1; }
         }
+
         .modal-close {
             float: right;
             font-size: 1.5rem;
             cursor: pointer;
             color: #a0aec0;
         }
+
         .modal h2 {
             text-align: center;
             margin-bottom: 25px;
             font-size: 1.6rem;
         }
+
         .form-group {
             margin-bottom: 18px;
         }
+
         .form-group label {
             display: block;
             margin-bottom: 6px;
             font-weight: 500;
         }
+
         .form-group input, .form-group select, .form-group textarea {
             width: 100%;
             padding: 10px 12px;
@@ -485,6 +576,7 @@
             border-radius: 10px;
             font-family: inherit;
         }
+
         .submit-btn {
             background: linear-gradient(135deg, #667eea, #764ba2);
             color: white;
@@ -495,6 +587,7 @@
             font-weight: 600;
             cursor: pointer;
         }
+
         .error-message, .success-message {
             padding: 10px;
             border-radius: 8px;
@@ -502,10 +595,13 @@
             display: none;
             font-size: 0.85rem;
         }
+
         .error-message { background: #fee2e2; color: #dc2626; }
         .success-message { background: #dcfce7; color: #16a34a; }
+
         .modal-footer { text-align: center; margin-top: 18px; font-size: 0.9rem; }
         .modal-footer span { color: #667eea; cursor: pointer; font-weight: 600; }
+
         /* Page Content */
         .single-page, .form-container {
             background: white;
@@ -515,12 +611,14 @@
             max-width: 800px;
             box-shadow: 0 20px 40px rgba(0,0,0,0.1);
         }
+
         .contact-grid {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
             gap: 25px;
             margin-bottom: 35px;
         }
+
         .contact-card {
             background: white;
             padding: 25px;
@@ -528,30 +626,35 @@
             text-align: center;
             box-shadow: 0 10px 30px rgba(0,0,0,0.1);
         }
+
         .contact-card i {
             font-size: 2rem;
             background: linear-gradient(135deg, #667eea, #764ba2);
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
         }
+
         .newsletter {
             background: linear-gradient(135deg, #667eea, #764ba2);
             color: white;
             padding: 50px 0;
             text-align: center;
         }
+
         .newsletter form {
             display: flex;
             gap: 10px;
             max-width: 450px;
             margin: 0 auto;
         }
+
         .newsletter input {
             flex: 1;
             padding: 12px 18px;
             border: none;
             border-radius: 50px;
         }
+
         .newsletter button {
             background: #ffd700;
             color: #333;
@@ -561,6 +664,7 @@
             cursor: pointer;
             font-weight: 600;
         }
+
         .back-btn {
             background: none;
             border: none;
@@ -569,15 +673,19 @@
             margin-bottom: 20px;
             font-weight: 500;
         }
+
         .text-center {
             text-align: center;
         }
+
         .hidden {
             display: none;
         }
+
         .mt-4 {
             margin-top: 40px;
         }
+
         @media (max-width: 768px) {
             .nav-links, .auth-buttons, .search-bar { display: none; }
             .mobile-menu { display: block; }
@@ -666,13 +774,151 @@
             { id: 25, name: "Gamma AI", category: "Writing", categoryKey: "writing", description: "AI presentation generator.", rating: 4.7, affiliateLink: "https://gamma.app", icon: "fa-chalkboard", price: "Freemium", pros: "Beautiful presentations", cons: "Limited free tier" }
         ];
 
+        // ============ BLOG POSTS WITH COMPLETE CONTENT ============
         const blogPosts = [
-            { id: 1, title: "Top 10 AI Tools for Content Creators in 2026", excerpt: "Discover the best AI tools that will transform your content creation workflow.", content: "Full article content here... AI tools are revolutionizing content creation.", date: "April 10, 2026", readTime: "8 min read", category: "Content Creation" },
-            { id: 2, title: "How to Make Money with AI Tools: Complete Guide", excerpt: "Learn proven strategies to monetize AI tools through affiliate marketing.", content: "Full article content here... Affiliate marketing with AI tools can generate significant passive income.", date: "April 8, 2026", readTime: "12 min read", category: "Monetization" },
-            { id: 3, title: "ChatGPT vs Claude vs Gemini: Which is Best?", excerpt: "Detailed comparison of the top AI chatbots.", content: "Full article content here... Each AI assistant has unique strengths.", date: "April 5, 2026", readTime: "10 min read", category: "Reviews" },
-            { id: 4, title: "Best AI Image Generators Tested 2026", excerpt: "We tested Midjourney, DALL-E 3, Stable Diffusion and more.", content: "Full article content here... After testing all major image generators.", date: "April 1, 2026", readTime: "15 min read", category: "Reviews" },
-            { id: 5, title: "AI Video Editing: Tools That Will Save You Hours", excerpt: "Revolutionary AI video tools that automate editing.", content: "Full article content here... AI video editors can automatically add captions.", date: "March 28, 2026", readTime: "7 min read", category: "Video" },
-            { id: 6, title: "The Future of AI in Digital Marketing", excerpt: "How AI is transforming SEO and social media.", content: "Full article content here... AI is revolutionizing digital marketing.", date: "March 25, 2026", readTime: "9 min read", category: "Marketing" }
+            { 
+                id: 1, 
+                title: "Top 10 AI Tools for Content Creators in 2026", 
+                excerpt: "Discover the best AI tools that will transform your content creation workflow and save you hours every week.", 
+                content: `<p>Content creation has been revolutionized by AI tools. Whether you're a YouTuber, blogger, podcaster, or social media manager, these 10 AI tools will transform your workflow.</p>
+                          <h3>1. ChatGPT for Content Ideation</h3>
+                          <p>ChatGPT helps generate blog topics, video scripts, and social media captions in seconds. Simply describe your niche and it provides dozens of ideas.</p>
+                          <h3>2. Midjourney for Visuals</h3>
+                          <p>Create stunning thumbnails and artwork without hiring a designer. Midjourney v6 produces photorealistic images from simple text prompts.</p>
+                          <h3>3. Jasper for Long-Form Content</h3>
+                          <p>Jasper specializes in blog posts, articles, and email newsletters. It maintains consistent tone and brand voice throughout.</p>
+                          <h3>4. Descript for Video/Podcast Editing</h3>
+                          <p>Edit video and audio like a text document. Remove ums, ahs, and mistakes with one click. Add captions automatically.</p>
+                          <h3>5. Canva AI for Graphics</h3>
+                          <p>Canva's AI tools generate templates, remove backgrounds, and suggest color palettes. Perfect for non-designers.</p>
+                          <h3>Why These Tools Matter</h3>
+                          <p>Content creators who use AI tools produce 3x more content in half the time. Start with one tool and gradually incorporate more into your workflow.</p>
+                          <h3>Pro Tip</h3>
+                          <p>Combine ChatGPT for ideas + Midjourney for images + Descript for editing = Complete content production pipeline.</p>`,
+                date: "April 10, 2026", 
+                readTime: "8 min read", 
+                category: "Content Creation" 
+            },
+            { 
+                id: 2, 
+                title: "How to Make Money with AI Tools: Complete Guide", 
+                excerpt: "Learn proven strategies to monetize AI tools through affiliate marketing, freelancing, and creating digital products.", 
+                content: `<p>AI tools aren't just for productivity - they can generate real income. Here's a complete guide to monetizing AI in 2026.</p>
+                          <h3>1. Affiliate Marketing (Easiest Start)</h3>
+                          <p>Sign up for affiliate programs of AI tools like Jasper, Canva, and Semrush. Create content reviewing these tools and include your unique links. Earn 20-50% commission on each sale.</p>
+                          <h3>2. Freelance AI Services</h3>
+                          <p>Offer AI-powered services on Fiverr or Upwork. Popular gigs include: AI-generated logos, voiceovers, video editing, and content writing. Charge $50-500 per project.</p>
+                          <h3>3. Create AI Tool Directories</h3>
+                          <p>Build a website listing AI tools (just like this one!). Monetize with display ads and affiliate links. With good SEO, you can earn $1000+/month.</p>
+                          <h3>4. Sell AI Prompts</h3>
+                          <p>Create premium prompt packs for ChatGPT, Midjourney, or Stable Diffusion. Sell on Etsy or Gumroad. Top sellers make $5000+/month.</p>
+                          <h3>5. AI Consulting</h3>
+                          <p>Help businesses implement AI tools in their workflow. Charge $100-200/hour for consulting services.</p>
+                          <h3>Getting Started Today</h3>
+                          <p>Pick ONE method from above. Master it for 30 days. Then expand to another. Consistency beats intensity.</p>`,
+                date: "April 8, 2026", 
+                readTime: "12 min read", 
+                category: "Monetization" 
+            },
+            { 
+                id: 3, 
+                title: "ChatGPT vs Claude vs Gemini: Which is Best?", 
+                excerpt: "Detailed comparison of the top AI chatbots to help you choose the right one for your needs.", 
+                content: `<p>Three major AI assistants dominate the market: ChatGPT, Claude, and Gemini. Here's how they compare across key categories.</p>
+                          <h3>ChatGPT (OpenAI)</h3>
+                          <p><strong>Best for:</strong> Creative writing, coding, general tasks<br>
+                          <strong>Pricing:</strong> Free tier available, ChatGPT Plus $20/month<br>
+                          <strong>Strengths:</strong> Largest user base, best at creative tasks, GPT-4 is powerful<br>
+                          <strong>Weaknesses:</strong> Can be slow during peak times, knowledge cutoff</p>
+                          <h3>Claude (Anthropic)</h3>
+                          <p><strong>Best for:</strong> Long documents, analysis, safe responses<br>
+                          <strong>Pricing:</strong> Free tier, Claude Pro $20/month<br>
+                          <strong>Strengths:</strong> 100K+ token context (can read entire books), excellent at analysis<br>
+                          <strong>Weaknesses:</strong> Less creative than ChatGPT</p>
+                          <h3>Gemini (Google)</h3>
+                          <p><strong>Best for:</strong> Research, YouTube summaries, Google integration<br>
+                          <strong>Pricing:</strong> Free tier, Gemini Advanced $20/month<br>
+                          <strong>Strengths:</strong> Connected to Google services, real-time information<br>
+                          <strong>Weaknesses:</strong> Hallucination issues sometimes</p>
+                          <h3>Verdict</h3>
+                          <p>For writers and coders: ChatGPT. For analysts and researchers: Claude. For Google users: Gemini. Many professionals use ALL THREE for different tasks.</p>`,
+                date: "April 5, 2026", 
+                readTime: "10 min read", 
+                category: "Reviews" 
+            },
+            { 
+                id: 4, 
+                title: "Best AI Image Generators Tested 2026", 
+                excerpt: "We tested Midjourney, DALL-E 3, Stable Diffusion and more. See which one creates the best images.", 
+                content: `<p>AI image generation has exploded. Here's our comprehensive test of the top 4 image generators.</p>
+                          <h3>Midjourney v6 - The Artist's Choice</h3>
+                          <p><strong>Quality:</strong> 9.5/10 - Photorealistic, artistic, stunning<br>
+                          <strong>Ease of Use:</strong> 7/10 - Requires Discord<br>
+                          <strong>Price:</strong> $10-120/month<br>
+                          Best for artistic work, concept art, and beautiful illustrations.</p>
+                          <h3>DALL-E 3 - The All-Rounder</h3>
+                          <p><strong>Quality:</strong> 9/10 - Great with text prompts<br>
+                          <strong>Ease of Use:</strong> 9/10 - Simple web interface<br>
+                          <strong>Price:</strong> Pay per image or ChatGPT Plus $20/month<br>
+                          Best for following complex instructions and rendering text.</p>
+                          <h3>Stable Diffusion - The Free Powerhouse</h3>
+                          <p><strong>Quality:</strong> 8.5/10 - Varies by model<br>
+                          <strong>Ease of Use:</strong> 6/10 - Technical setup required<br>
+                          <strong>Price:</strong> FREE (open source)<br>
+                          Best for unlimited generations and custom models.</p>
+                          <h3>Leonardo AI - Best Free Tier</h3>
+                          <p><strong>Quality:</strong> 8/10 - Great for game assets<br>
+                          <strong>Ease of Use:</strong> 8/10 - Web interface<br>
+                          <strong>Price:</strong> 150 free images daily<br>
+                          Best for beginners and those wanting free daily generations.</p>
+                          <h3>Our Recommendation</h3>
+                          <p>For professionals: Midjourney. For general use: DALL-E 3. For budget: Leonardo's free tier.</p>`,
+                date: "April 1, 2026", 
+                readTime: "15 min read", 
+                category: "Reviews" 
+            },
+            { 
+                id: 5, 
+                title: "AI Video Editing: Tools That Will Save You Hours", 
+                excerpt: "Revolutionary AI video tools that automate editing, add captions, and generate B-roll automatically.", 
+                content: `<p>Video editing is time-consuming. These AI tools cut editing time by 70% or more.</p>
+                          <h3>Descript - Edit Video Like a Doc</h3>
+                          <p>Upload your video. Descript transcribes it. Delete words from the transcript - the video edits itself. Also includes AI voice cloning and screen recording.</p>
+                          <h3>Pictory.ai - Long to Short</h3>
+                          <p>Turn webinars, podcasts, or Zoom calls into short social media clips. AI identifies the best moments and creates captioned videos automatically.</p>
+                          <h3>Runway ML - Generative Video</h3>
+                          <p>Remove objects from videos, change backgrounds, or generate new video clips from text prompts. Used by professional filmmakers.</p>
+                          <h3>Opus Clip - Viral Clip Generator</h3>
+                          <p>Feed it a long video. It extracts multiple short clips optimized for TikTok, Reels, and Shorts. Includes AI captions and B-roll.</p>
+                          <h3>Time Savings Breakdown</h3>
+                          <p>Manual editing: 2 hours for 10-minute video. AI editing: 20 minutes. That's 83% time saved!</p>
+                          <h3>Best Free Option</h3>
+                          <p>DaVinci Resolve has free AI features like magic mask and voice isolation. Great starting point.</p>`,
+                date: "March 28, 2026", 
+                readTime: "7 min read", 
+                category: "Video" 
+            },
+            { 
+                id: 6, 
+                title: "The Future of AI in Digital Marketing", 
+                excerpt: "How AI is transforming SEO, social media, email marketing, and paid advertising.", 
+                content: `<p>Digital marketing is being completely transformed by AI. Here's what every marketer needs to know.</p>
+                          <h3>AI in SEO</h3>
+                          <p>Tools like Surfer SEO and Frase analyze top-ranking content and tell you exactly what to write. AI also generates meta descriptions, alt text, and internal links automatically.</p>
+                          <h3>AI in Social Media</h3>
+                          <p>Tools like Buffer's AI and Hootsuite generate post ideas, write captions, and suggest best posting times. Lately.ai even creates entire content calendars.</p>
+                          <h3>AI in Email Marketing</h3>
+                          <p>Mailchimp's AI and HubSpot predict the best send times, personalize subject lines, and segment audiences automatically. Open rates increase 30-50%.</p>
+                          <h3>AI in Paid Ads</h3>
+                          <p>Google's Performance Max and Meta's Advantage+ automate bidding, targeting, and ad creation. They outperform manual campaigns by 20-30%.</p>
+                          <h3>AI Analytics</h3>
+                          <p>Tools like Tableau Einstein and Google Analytics 4 use AI to detect trends, predict customer behavior, and suggest actions without manual data analysis.</p>
+                          <h3>The Bottom Line</h3>
+                          <p>Marketers using AI tools complete work 3x faster and see better results. The key is learning to collaborate with AI, not fear it.</p>`,
+                date: "March 25, 2026", 
+                readTime: "9 min read", 
+                category: "Marketing" 
+            }
         ];
 
         // ============ AUTH SYSTEM ============
@@ -683,7 +929,6 @@
             const savedUser = localStorage.getItem('aiToolUser');
             if (savedUser) { currentUser = JSON.parse(savedUser); }
             updateAuthUI();
-            // If no user, show login prompt on home page
             if (!currentUser) {
                 showLoginPrompt();
             }
@@ -831,13 +1076,21 @@
         }
 
         function renderToolsPage(filter=null) { let ft = filter ? tools.filter(t=>t.categoryKey===filter) : tools; document.getElementById('toolsPage').innerHTML = `<section class="hero" style="padding:50px 0"><div class="container"><h1>All <span class="highlight">AI Tools</span></h1><p>Browse ${ft.length}+ AI tools</p></div></section><section class="all-tools-section"><div class="container"><div class="tools-grid">${ft.map(t=>renderToolCard(t)).join('')}</div></div></section>`; }
-        function renderBlogPage() { document.getElementById('blogPage').innerHTML = `<section class="hero" style="padding:50px 0"><div class="container"><h1>AI <span class="highlight">Blog</span></h1><p>Latest news, reviews and tutorials</p></div></section><section class="all-tools-section"><div class="container"><div class="blog-grid">${blogPosts.map(p=>renderBlogCard(p)).join('')}</div></div></section>`; }
+        
+        function renderBlogPage() { 
+            document.getElementById('blogPage').innerHTML = `<section class="hero" style="padding:50px 0"><div class="container"><h1>AI <span class="highlight">Blog</span></h1><p>Latest news, reviews and tutorials</p></div></section><section class="all-tools-section"><div class="container"><div class="blog-grid">${blogPosts.map(p=>renderBlogCard(p)).join('')}</div></div></section>`; 
+        }
+        
         function renderSubmitPage() { document.getElementById('submitPage').innerHTML = `<section class="hero" style="padding:50px 0"><div class="container"><h1>Submit Your <span class="highlight">AI Tool</span></h1><p>Get featured in our directory</p></div></section><div class="container"><div class="form-container"><form onsubmit="submitTool(event)"><div class="form-group"><label>Tool Name</label><input type="text" id="toolName" required></div><div class="form-group"><label>Category</label><select id="toolCategory" required><option>Chatbots</option><option>Image Generation</option><option>Video</option><option>Writing</option><option>Coding</option><option>Voice</option></select></div><div class="form-group"><label>Website URL</label><input type="url" id="toolUrl" required></div><div class="form-group"><label>Description</label><textarea rows="4" id="toolDescription" required></textarea></div><div class="form-group"><label>Your Email</label><input type="email" id="submitterEmail" required></div><button type="submit" class="submit-btn">Submit Tool</button></form></div></div>`; }
+        
         function renderContactPage() { document.getElementById('contactPage').innerHTML = `<section class="hero" style="padding:50px 0"><div class="container"><h1>Contact <span class="highlight">Us</span></h1><p>Get in touch with our team</p></div></section><div class="container"><div class="contact-grid"><div class="contact-card"><i class="fas fa-envelope"></i><h3>Email Us</h3><p>support@aihub.com</p></div><div class="contact-card"><i class="fas fa-phone"></i><h3>Call Us</h3><p>+1 (555) 123-4567</p></div><div class="contact-card"><i class="fab fa-discord"></i><h3>Join Discord</h3><p>Community of AI enthusiasts</p></div></div><div class="form-container"><h3>Send us a Message</h3><form onsubmit="sendMessage(event)"><div class="form-group"><label>Name</label><input type="text" id="contactName" required></div><div class="form-group"><label>Email</label><input type="email" id="contactEmail" required></div><div class="form-group"><label>Message</label><textarea rows="5" id="contactMessage" required></textarea></div><button type="submit" class="submit-btn">Send Message</button></form></div></div>`; }
         
         function renderSingleToolPage(id) { const tool = tools.find(t=>t.id==id); document.getElementById('singleToolPage').innerHTML = `<div class="container"><div class="single-page"><button class="back-btn" onclick="showPage('tools')"><i class="fas fa-arrow-left"></i> Back</button><div class="tool-image" style="height:120px;width:120px;margin:0 auto 20px;border-radius:20px;display:flex;align-items:center;justify-content:center;background:linear-gradient(135deg,#667eea,#764ba2)"><i class="fas ${tool.icon}" style="font-size:3rem;color:white"></i></div><h1>${tool.name}</h1><div class="meta"><span class="tool-category">${tool.category}</span><span class="rating" style="margin-left:15px">${'★'.repeat(Math.floor(tool.rating))}${'☆'.repeat(5-Math.floor(tool.rating))}</span></div><p>${tool.description}</p><h3>Pricing: ${tool.price}</h3><h3>Pros:</h3><ul><li>${tool.pros}</li></ul><h3>Cons:</h3><ul><li>${tool.cons}</li></ul><div style="text-align:center;margin-top:30px"><a href="${tool.affiliateLink}" target="_blank" class="btn btn-primary">Get ${tool.name} Now</a></div></div></div>`; }
         
-        function renderSingleBlogPage(id) { const post = blogPosts.find(p=>p.id==id); document.getElementById('singleBlogPage').innerHTML = `<div class="container"><div class="single-page"><button class="back-btn" onclick="showPage('blog')"><i class="fas fa-arrow-left"></i> Back</button><h1>${post.title}</h1><div class="meta"><span>${post.date}</span><span>${post.readTime}</span><span class="tool-category">${post.category}</span></div><p>${post.content}</p></div></div>`; }
+        function renderSingleBlogPage(id) { 
+            const post = blogPosts.find(p=>p.id==id); 
+            document.getElementById('singleBlogPage').innerHTML = `<div class="container"><div class="single-page"><button class="back-btn" onclick="showPage('blog')"><i class="fas fa-arrow-left"></i> Back to Blog</button><h1>${post.title}</h1><div class="meta"><span><i class="far fa-calendar"></i> ${post.date}</span><span><i class="far fa-clock"></i> ${post.readTime}</span><span class="tool-category">${post.category}</span></div><div class="content">${post.content}</div><div style="margin-top: 40px; padding: 20px; background: #f8f9fa; border-radius: 15px; text-align: center;"><h3>Enjoyed this article?</h3><p>Subscribe to our newsletter for more AI insights!</p><button class="btn btn-primary" onclick="showPage('home')" style="margin-top: 10px;">Subscribe Now</button></div></div></div>`; 
+        }
         
         function renderPrivacyPage() { document.getElementById('privacyPage').innerHTML = `<div class="container"><div class="single-page"><h1>Privacy Policy</h1><p>Last updated: April 13, 2026</p><h3>1. Information We Collect</h3><p>We collect personal information including name, email address, and usage data when you use our directory.</p><h3>2. How We Use Your Information</h3><p>We use your information to provide, maintain, and improve our services, and to communicate with you.</p><h3>3. Cookies</h3><p>We use cookies to enhance your browsing experience and analyze site traffic.</p><h3>4. Third-Party Links</h3><p>Our directory contains affiliate links to third-party websites.</p><h3>5. Contact Us</h3><p>For privacy questions, contact us at privacy@aihub.com</p></div></div>`; }
         
@@ -848,9 +1101,11 @@
         function renderAdvertisePage() { document.getElementById('advertisePage').innerHTML = `<div class="container"><div class="single-page"><h1>Advertise With Us</h1><p>Reach thousands of AI enthusiasts and professionals daily.</p><h3>Advertising Options</h3><ul><li><strong>Sponsored Tool Listing:</strong> $99/month</li><li><strong>Banner Ads:</strong> $199/month</li><li><strong>Sponsored Blog Post:</strong> $299/post</li></ul><button class="btn btn-primary" onclick="showPage('contact')" style="margin-top:20px">Contact Us Now</button></div></div>`; }
         
         function renderToolCard(t) { return `<div class="tool-card" onclick="showPage('singleTool',${t.id})"><div class="tool-image"><i class="fas ${t.icon}"></i></div><div class="tool-content"><span class="tool-category">${t.category}</span><h3>${t.name}</h3><p>${t.description.substring(0,70)}...</p><div class="tool-footer"><div class="rating">${'★'.repeat(Math.floor(t.rating))}${'☆'.repeat(5-Math.floor(t.rating))}</div><a href="${t.affiliateLink}" target="_blank" class="affiliate-link" onclick="event.stopPropagation()">Get Tool →</a></div></div></div>`; }
-        function renderBlogCard(p) { return `<div class="blog-card" onclick="showPage('singleBlog',${p.id})"><div class="blog-content"><span class="tool-category">${p.category}</span><h3>${p.title}</h3><div class="blog-meta"><span>${p.date}</span><span>${p.readTime}</span></div><p>${p.excerpt.substring(0,80)}...</p><div class="read-more">Read More →</div></div></div>`; }
+        
+        function renderBlogCard(p) { return `<div class="blog-card" onclick="showPage('singleBlog',${p.id})"><div class="blog-content"><span class="tool-category">${p.category}</span><h3>${p.title}</h3><div class="blog-meta"><span><i class="far fa-calendar"></i> ${p.date}</span><span><i class="far fa-clock"></i> ${p.readTime}</span></div><p>${p.excerpt.substring(0,80)}...</p><div class="read-more">Read More →</div></div></div>`; }
         
         function filterByCategory(c) { showPage('tools'); let ft = tools.filter(t=>t.categoryKey===c); document.getElementById('toolsPage').innerHTML = `<section class="hero" style="padding:50px 0"><div class="container"><h1><span class="highlight">${c}</span> AI Tools</h1><p>Browse all ${c} tools</p></div></section><section class="all-tools-section"><div class="container"><div class="tools-grid">${ft.map(t=>renderToolCard(t)).join('')}</div></div></section>`; }
+        
         function subscribeNewsletter(e) { e.preventDefault(); alert('Thank you for subscribing!'); e.target.reset(); }
         function submitTool(e) { e.preventDefault(); alert('Thank you! Your tool has been submitted.'); e.target.reset(); }
         function sendMessage(e) { e.preventDefault(); alert('Thank you! We will respond within 24 hours.'); e.target.reset(); }
